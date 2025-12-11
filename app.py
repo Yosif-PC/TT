@@ -106,7 +106,7 @@ def Products():
     return render_template('Products.html')
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
 #<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Yosif-PC/MY_CSS@main/style.css">
